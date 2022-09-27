@@ -1,0 +1,79 @@
+.head-main {
+background-color: #1F2937;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    font-size: 1rem;
+}
+
+#logotext{ 
+    font-size: 24px;
+    color: #f9faf8;
+    margin: auto;
+    padding: 2rem;
+    
+   
+}
+
+nav {
+    /*
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    
+    margin: auto;
+    padding: 2rem; */
+
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    width:1000px;   
+    display:block;
+}
+nav ul{
+    /*
+    display: flex;
+    flex: 1 ;
+    justify-content: space-around;
+    justify-content: right;
+    vertical-align: top;
+    list-style: none;
+    */
+
+}
+
+nav li {
+    /*
+    justify-content: start;
+    justify-content: space-around;
+    display: table-cell;
+    */
+    float: right;
+    display:inline;
+}
+
+h1 {
+    font-size: 48px;
+    font: weight 900px;;
+    color: white;
+}
+
+#button_head {
+    background-color: #3882F6;
+}
+
+.text_header p {
+font-size: 18px;
+color: #e5e7eb;
+}
+
+.text_header {
+width: 90%;
+margin: auto;
+padding: 2rem;
+}

@@ -1,10 +1,11 @@
 <html>
     <head>
+        <link rel="stylessheet"  type="text/css" href="/css/css">
         <meta charset="utf-8" />
         <title></title>
     </head>
     <header>
-        
+        <img id="logo" src="/ptc/ALODZ.jpg" alt="Logo">
     </header>
 
     <body>
