@@ -21,40 +21,29 @@ li{
 }
 
 nav {
-    /*
+    
     min-height: 10vh;
     display: flex;
     align-items: center;
     
     margin: auto;
-    padding: 2rem; */
+    padding: 2rem; 
 
-    margin:0px;
-    padding:0px;
-    list-style:none;
-    width:1000px;   
-    display:block;
 }
 nav ul{
-    /*
+    
     display: flex;
-    flex: 1 ;
-    justify-content: space-around;
     justify-content: right;
-    vertical-align: top;
+    flex: 2 1 40rem ;
+    justify-content: space-around;
     list-style: none;
-    */
+    
+    
 
 }
 
-nav li {
-    /*
-    justify-content: start;
-    justify-content: space-around;
-    display: table-cell;
-    */
-    float: right;
-    display:inline;
+.logotext{
+    flex: 1 1 40rem;
 }
 
 h1 {
@@ -65,6 +54,8 @@ h1 {
 
 #button_head {
     background-color: #3882F6;
+    border-radius: 10px;
+    border: 2px #3882F6;
 }
 
 .text_header p {
@@ -75,5 +66,138 @@ color: #e5e7eb;
 .text_header {
 width: 90%;
 margin: auto;
-padding: 2rem;
+padding: 3rem;
+}
+
+.container{
+    display: flex;
+}
+.logo{
+    width: auto;
+    height: auto;
+}
+
+.Information{
+    display: flex;
+    justify-content: center;
+}
+.Information h1 {
+    font-size: 36px;
+    font: 900;
+    color: #1F2937;
+    font-display: center;
+}
+.boxweiss  {
+width: 200px;
+height: 100px; 
+margin: 10px;
+padding: 10px;
+display: flex;
+justify-content: space-around;
+border:solid  10px #3882F6;
+}
+
+.boxweiss  {
+    width: 200px;
+    height: 100px; 
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border:solid  10px #3882F6;
+    border-radius: 25px;
+    }
+
+.boxkaho  {
+width: 200px;
+height: 100px; 
+margin: 10px;
+padding: 10px;
+display: flex;
+justify-content: space-around;
+border:solid  10px #3882F6;
+border-radius: 25px;
+}
+
+.box3  {
+width: 200px;
+height: 100px; 
+margin: 10px;
+padding: 10px;
+display: flex;
+justify-content: space-around;
+border:solid  10px #3882F6;
+border-radius: 25px;
+}
+
+.box4  {
+width: 200px;
+height: 100px; 
+margin: 10px;
+padding: 10px;
+display: flex;
+justify-content: space-around;
+border:solid  10px #3882F6;
+border-radius: 25px;
+}   
+
+.box ul{
+    list-style: none;
+    display: flex;
+
+}
+.box p{
+    text-align: center;
+}
+
+/*Quote*/
+.quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    display: flex;
+}
+
+#quotetext {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    text-align: start;
+}
+#quoteauthor {
+    font-size: 24px;
+    color: darkslateblue;
+    font-style: BOLD;
+    text-align: right;
+}
+
+.action {
+    padding: 30px;
+    margin: 100px;
+    border-radius: 25px;
+    background-color: #3882F6;
+    text-align: center;
+    justify-content: flex-end;  
+}
+#button_discord {
+    display:grid;
+}
+
+/*footer*/
+.footer{
+    background-color: #1F2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: auto  ;
+}
+.logo_footer{
+    width: auto;
+    height: 50px;
+}
+
+.footer h2 {
+    font-size: 45px;
 }
