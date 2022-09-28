@@ -1,5 +1,5 @@
 .head-main {
-background-color: #1F2937;
+background-color: #6014d3;
 }
 
 a {
@@ -176,7 +176,7 @@ border-radius: 25px;
     padding: 30px;
     margin: 100px;
     border-radius: 25px;
-    background-color: #3882F6;
+    background-color: #4726ecf0;
     text-align: center;
     justify-content: flex-end;  
 }
@@ -186,7 +186,7 @@ border-radius: 25px;
 
 /*footer*/
 .footer{
-    background-color: #1F2937;
+    background-color: #6014d3;
     color: #e5e7eb;
     display: flex;
     justify-content: space-between;
