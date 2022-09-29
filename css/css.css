@@ -1,5 +1,5 @@
 .head-main {
-background-color: #6014d3;
+background-color: #1F2937;
 }
 
 a {
@@ -176,7 +176,7 @@ border-radius: 25px;
     padding: 30px;
     margin: 100px;
     border-radius: 25px;
-    background-color: #4726ecf0;
+    background-color: #193f75;
     text-align: center;
     justify-content: flex-end;  
 }
@@ -186,7 +186,7 @@ border-radius: 25px;
 
 /*footer*/
 .footer{
-    background-color: #6014d3;
+    background-color: #1F2937;
     color: #e5e7eb;
     display: flex;
     justify-content: space-between;
@@ -198,6 +198,7 @@ border-radius: 25px;
     height: 50px;
 }
 
-.footer h2 {
-    font-size: 45px;
+.footer p {
+    font-size: 38px;
+    font-style: italic;  
 }
