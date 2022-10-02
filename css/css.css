@@ -43,7 +43,7 @@ nav ul{
 }
 
 .logotext{
-    flex: 1 1 40rem;
+    flex: 2 1 40rem;
 }
 
 h1 {
@@ -87,15 +87,7 @@ padding: 3rem;
     color: #1F2937;
     font-display: center;
 }
-.boxweiss  {
-width: 200px;
-height: 100px; 
-margin: 10px;
-padding: 10px;
-display: flex;
-justify-content: space-around;
-border:solid  10px #3882F6;
-}
+
 
 .boxweiss  {
     width: 200px;
@@ -139,7 +131,23 @@ display: flex;
 justify-content: space-around;
 border:solid  10px #3882F6;
 border-radius: 25px;
-}   
+} 
+#pctbox1{ 
+    width: 200px;
+    height: 100px;
+ }  
+ #pctbox2{ 
+    width: 200px;
+    height: 100px;
+ }
+ #pctbox3{ 
+    width: 200px;
+    height: 100px;
+ }
+ #pctbox4{ 
+    width: 200px;
+    height: 100px;
+ }
 
 .box ul{
     list-style: none;
