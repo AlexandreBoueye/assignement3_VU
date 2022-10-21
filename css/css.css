@@ -1,6 +1,25 @@
+nav{
+    background-color: #1F2937;
+    text-align: center;
+  }
+  
+    
+  
+  a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+
 .head-main {
 background-color: #1F2937;
+
 }
+
+.header {
+    display: flex;
+}
+
 
 a {
     color: white;
@@ -88,10 +107,10 @@ padding: 3rem;
     font-display: center;
 }
 
-
+/* CSS Boite debut */
 .boxweiss  {
     width: 200px;
-    height: 100px; 
+    height: 150px; 
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -102,7 +121,7 @@ padding: 3rem;
 
 .boxkaho  {
 width: 200px;
-height: 100px; 
+height: 150px; 
 margin: 10px;
 padding: 10px;
 display: flex;
@@ -113,7 +132,7 @@ border-radius: 25px;
 
 .box3  {
 width: 200px;
-height: 100px; 
+height: 150px; 
 margin: 10px;
 padding: 10px;
 display: flex;
@@ -124,7 +143,7 @@ border-radius: 25px;
 
 .box4  {
 width: 200px;
-height: 100px; 
+height: 150px; 
 margin: 10px;
 padding: 10px;
 display: flex;
@@ -132,6 +151,7 @@ justify-content: space-around;
 border:solid  10px #3882F6;
 border-radius: 25px;
 } 
+
 #pctbox1{ 
     width: 200px;
     height: 100px;
@@ -157,6 +177,7 @@ border-radius: 25px;
 .box p{
     text-align: center;
 }
+/* CSS Boite fin */
 
 /*Quote*/
 .quote {
@@ -177,7 +198,7 @@ border-radius: 25px;
     font-size: 24px;
     color: darkslateblue;
     font-style: BOLD;
-    text-align: right;
+    text-align: end;
 }
 
 .action {
@@ -194,7 +215,7 @@ border-radius: 25px;
 
 /*footer*/
 .footer{
-    background-color: #1F2937;
+    background-color: #534035;
     color: #e5e7eb;
     display: flex;
     justify-content: space-between;
@@ -210,3 +231,74 @@ border-radius: 25px;
     font-size: 38px;
     font-style: italic;  
 }
+
+/*Effect flooter start*/
+.TDS-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    background-color:#1F2937;
+ }
+ 
+ 
+ .TDS {
+    position: absolute;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+ }
+ 
+ .TDS:before,
+ .TDS:after {
+    display: block;
+    content: attr(data-TDS);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .TDS:before {
+    animation: TDS-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #0ff;
+    z-index: -1;
+ }
+ 
+ .TDS:after {
+    animation: TDS-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #ff00ff;
+    z-index: -2;
+ }
+ 
+ @keyframes TDS-color {
+    0% {
+       transform: translate(0);
+    }
+ 
+    20% {
+       transform: translate(-3px, 3px);
+    }
+ 
+    40% {
+       transform: translate(-3px, -3px);
+    }
+ 
+    60% {
+       transform: translate(3px, 3px);
+    }
+ 
+    80% {
+       transform: translate(3px, -3px);
+    }
+ 
+    to {
+       transform: translate(0);
+    }
+ }
+ /*Effect flooter end*/

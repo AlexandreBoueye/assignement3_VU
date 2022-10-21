@@ -1,0 +1,17 @@
+p {
+   text-align: justify;
+}
+
+.text_player {
+    margin: 10;
+    padding: auto;
+    width: 400px;
+    justify-content: center;
+}
+.hover-image a {
+    background-color: blue;
+    font-size: small;
+}
+
+
+

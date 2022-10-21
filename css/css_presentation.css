@@ -1,0 +1,278 @@
+nav{
+  background-color: #1F2937;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hover-image a {
+  background-color: #555;
+}
+/*Debut bouton player*/
+.button_player {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: auto;
+  min-width: auto;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button_player :active,
+.button_player:hover {
+  outline: 0;
+}
+
+.button_player span {
+  background-color: rgb(5, 6, 45);
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 1000%;
+  height: auto;
+  transition: 300ms;
+}
+
+.button_player:hover span {
+  background: none;
+}
+
+@media (min-width: auto) {
+  .button_player {
+    font-size: 24px;
+    min-width: 50px;
+  }
+}
+/*Fin bouton player*/
+
+
+.menu {
+  display: inline-block;
+ 
+}
+.menu > li {
+  float: left;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #1F2937;
+  cursor: pointer;
+  font-size: 17px;
+}
+.sub-menu {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+.sub-menu li {
+  font-size: 14px;
+  background-color: #1F2937;
+  padding: 8px 0;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+.sub-menu li:hover {
+  background: black;
+}
+.menu > li:hover .sub-menu li {
+  transform: scale(1);
+}
+.menu > li:hover .sub-menu {
+  transform: scale(1);
+}
+
+.text_header p {
+  font-size: 18px;
+  color: #e5e7eb;
+  }
+  
+  .text_header {
+  width: 90%;
+  margin: auto;
+  padding: 3rem;
+  }
+  .container{
+    display: flex;
+    background-color: #1F2937;
+}
+.logo{
+    width: auto;
+    height: auto;
+}
+
+.Information{
+    display: flex;
+    justify-content: center;
+}
+.Information h1 {
+    font-size: 36px;
+    font: 900;
+    color: #1F2937;
+    font-display: center;
+}
+#button_head {
+  background-color: #3882F6;
+  border-radius: 10px;
+  border: 2px #3882F6;
+}
+
+/*Overlay image wies*/
+.overlay-image {
+  position: relative; /* Important pour positionner le contenu par dessus, relatif à l'élément */
+display: inline-block;   /* Prendra la forme de son contenu */
+;
+}
+
+.overlay-image img {
+  vertical-align: middle; /* Ou display: block, pour enlever l'espace blanc */
+}
+img{
+  width: auto;
+  height: 200;
+}
+
+.overlay-image .hover-image {
+  /* Positionnement du contenu hover */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  /* Effets de transition */
+  opacity: 0; /* On cache l'élément via son opacité */
+  transition: opacity 0.25s ease-in-out; /* Effet de transition sur le hover */
+  
+  /* Style du contenu hover */
+  background-color: rgba(255,0,0,0.6); /* Couleur par défaut */
+  color: white;
+  padding: 30px;
+  
+  /* Centrer le contenu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.overlay-image:hover .hover-image {
+  opacity: 1; /* Lors du hover, on remet l'opacité à 1 */
+}
+
+ #player {
+background-color: black;
+ }
+p {
+  font-size: small;
+}
+
+
+/*Effect flooter start*/
+
+  .footer{
+    position: absolute;;
+
+  } 
+.TDS-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  background-color:#1F2937;
+}
+
+
+.TDS {
+  position: relative;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 5px;
+  z-index: 1;
+}
+
+.TDS:before,
+.TDS:after {
+  display: block;
+  content: attr(data-TDS);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.TDS:before {
+  animation: TDS-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #0ff;
+  z-index: -1;
+}
+
+.TDS:after {
+  animation: TDS-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #ff00ff;
+  z-index: -2;
+}
+
+@keyframes TDS-color {
+  0% {
+     transform: translate(0);
+  }
+
+  20% {
+     transform: translate(-3px, 3px);
+  }
+
+  40% {
+     transform: translate(-3px, -3px);
+  }
+
+  60% {
+     transform: translate(3px, 3px);
+  }
+
+  80% {
+     transform: translate(3px, -3px);
+  }
+
+  to {
+     transform: translate(0);
+  }
+}
+
+.TDS b {
+text-align: left;
+}
