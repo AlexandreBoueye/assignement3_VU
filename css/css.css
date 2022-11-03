@@ -215,13 +215,16 @@ border-radius: 25px;
 
 /*footer*/
 .footer{
-    background-color: #534035;
+    background-color: #1F2937;
     color: #e5e7eb;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto;
-    padding: auto  ;
+    padding: auto ;
+    width: 100%;
+    
 }
+
 .logo_footer{
     width: auto;
     height: 50px;
