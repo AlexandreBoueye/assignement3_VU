@@ -174,7 +174,7 @@ img{
   transition: opacity 0.25s ease-in-out; /* Effet de transition sur le hover */
   
   /* Style du contenu hover */
-  background-color: rgba(255,0,0,0.6); /* Couleur par défaut */
+  background-color: rgb(135, 206, 235); /* Couleur par défaut */
   color: white;
   padding: 30px;
   
