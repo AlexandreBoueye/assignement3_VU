@@ -1,6 +1,7 @@
 nav{
     background-color: #1F2937;
     text-align: center;
+    position: sticky;
   }
   
     
@@ -47,6 +48,7 @@ nav {
     
     margin: auto;
     padding: 2rem; 
+    position: sticky;
 
 }
 nav ul{
@@ -56,7 +58,7 @@ nav ul{
     flex: 2 1 40rem ;
     justify-content: space-around;
     list-style: none;
-    
+    position: sticky;
     
 
 }
@@ -216,11 +218,15 @@ border-radius: 25px;
 /*footer*/
 .footer{
     background-color: #534035;
-    color: #e5e7eb;
     display: flex;
-    justify-content: space-between;
-    margin: auto;
-    padding: auto  ;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+   
 }
 .logo_footer{
     width: auto;
@@ -236,22 +242,30 @@ border-radius: 25px;
 .TDS-wrapper {
     width: auto;
     height: auto;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
     background-color:#1F2937;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
  }
  
  
  .TDS {
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    padding: 10px;
     font-size: 80px;
     font-weight: 700;
     line-height: 1.2;
     color: #fff;
     letter-spacing: 5px;
     z-index: 1;
+    
  }
  
  .TDS:before,
@@ -265,13 +279,13 @@ border-radius: 25px;
  }
  
  .TDS:before {
-    animation: TDS-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    animation: TDS-color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
     color: #0ff;
     z-index: -1;
  }
  
  .TDS:after {
-    animation: TDS-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    animation: TDS-color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
     color: #ff00ff;
     z-index: -2;
  }
@@ -302,3 +316,11 @@ border-radius: 25px;
     }
  }
  /*Effect flooter end*/
+ .logo_f{
+    display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+ }

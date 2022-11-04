@@ -1,6 +1,8 @@
 nav{
   background-color: #1F2937;
-  text-align: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 * {
   margin: 0;
@@ -146,7 +148,7 @@ a {
   border: 2px #3882F6;
 }
 
-/*Overlay image wies*/
+/*Overlay image weis*/
 .overlay-image {
   position: relative; /* Important pour positionner le contenu par dessus, relatif à l'élément */
 display: inline-block;   /* Prendra la forme de son contenu */
@@ -201,50 +203,70 @@ p {
 /*Effect flooter start*/
 
   .footer{
-    position: absolute;;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+    text-align: center;
 
   } 
 .TDS-wrapper {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  text-align: left;
+  display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: center;
+    order: 0;
   background-color:#1F2937;
 }
 
 
 .TDS {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
   font-size: 80px;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
   letter-spacing: 5px;
   z-index: 1;
+  
 }
 
 .TDS:before,
 .TDS:after {
   display: block;
   content: attr(data-TDS);
-  position: absolute;
-  top: 0;
-  left: 0;
+  position:center;
+  
+  
+  
   opacity: 0.8;
 }
 
 .TDS:before {
-  animation: TDS-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  animation: TDS-color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
   color: #0ff;
   z-index: -1;
+  
+  
+ 
 }
 
 .TDS:after {
-  animation: TDS-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  animation: TDS-color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
   color: #ff00ff;
   z-index: -2;
+ 
+ 
 }
 
 @keyframes TDS-color {
@@ -253,19 +275,20 @@ p {
   }
 
   20% {
-     transform: translate(-3px, 3px);
+    
+    transform: translate(3px,-3px);
   }
 
   40% {
-     transform: translate(-3px, -3px);
+    transform: translate(3px,-3px);
   }
 
   60% {
-     transform: translate(3px, 3px);
+    transform: translate(3px,-3px);
   }
 
   80% {
-     transform: translate(3px, -3px);
+    transform: translate(3px,-3px);
   }
 
   to {
@@ -273,6 +296,13 @@ p {
   }
 }
 
-.TDS b {
-text-align: left;
+
+
+.logo_f{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 }
