@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Desktop/mern-backend-main 2/config"
+		},
+		{
+			"path": "../../../../Desktop/mern-backend-main 2/controllers"
+		},
+		{
+			"path": "../../../../Desktop/mern-backend-main 2/middleware"
+		},
+		{
+			"path": "../../../../Desktop/mern-backend-main 2/model"
+		},
+		{
+			"path": "../../../../Desktop/mern-backend-main 2/routes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "assignement3_VU"
+	}
+}

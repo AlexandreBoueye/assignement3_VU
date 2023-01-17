@@ -1,0 +1,176 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css">
+		<script src="js/Connection.js" defer></script>
+        
+
+
+		<title>TDS</title>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<a href="#" class="logo" id="logo">TDS</a>
+					
+                    <ul class="sub-menu">
+                        <li>
+                          <a  href="/page/Presentation.html">Presentation</a>
+                        </li>
+                        <li>
+                          <a href="/page/planning.html">Planning</a>
+                      </li>
+                    
+                        
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/channel/UCS1tR23Dc2cf0M4lzH-0t8Q">Youtube </a>
+                  </li>
+              
+                  <li>
+                      <a href="https://www.twitch.tv/thedamoclesswordnb"> Twitch </a>
+                  </li>
+              
+                  <li>
+                      <a href="https://discord.gg/QsCPhbtndM"> Discord</a>
+                  </li>
+
+                  <li>
+                      <a href="/page/contact.html">Contact us</a> 
+                   </li>
+						<button type="button" , role="button" class="btn" id="displayForm">Se Connecter</button>
+					</li>
+				</ul>
+                <div class="container2">
+                    <div  class="text_header">  
+                 
+                    <h1>The Damocles Sword</h1>
+                    <p>French non-profit association under law 1901 "Sharing knowledge about league of legend"</p>
+                    <a href="https://www.youtube.com/channel/UCS1tR23Dc2cf0M4lzH-0t8Q" button id="button_head" type="button">Youtube</button></a>
+                    </div>  
+                <div class="logo2">
+                <img src="/ptc/ALODZ.png" alt="Logo"  id="logo_header"> 
+                </div>
+                </div>
+			</nav>
+
+			<section>
+				<div class="sec-container">
+					<div class="formWrapper">
+						<div class="card">
+							<div class="card-header">
+								<div id="forLogin" class="form-header active">Se connecter</div>
+								<div id="forRegister" class="form-header">S'inscrire</div>
+							</div>
+							<div class="card-body" id="formContainer">
+								<form action="" id="loginForm">
+									<input type="text" class="form-control" placeholder="@login" />
+									<input type="password" class="form-control" placeholder="password" />
+									<label for="remember">
+										<input type="checkbox" class="form-check" id="remember" />
+										Se Souvenir de moi
+									</label>
+									<button class="formButton">Connexion</button>
+								</form>
+
+								<form action="" id="registerForm" class="toggleForm">
+									<input type="text" class="form-control" placeholder="@login..." />
+									<input type="text" class="form-control" placeholder="password..." />
+									<input type="text" class="form-control" placeholder="Confirm your password..." />
+									<label for="remember">
+										<input type="checkbox" class="form-check" id="privacy" />
+										J'accepte les termes de l'accord
+									</label>
+									<button class="formButton">Inscription</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+            <h1>Some Information</h1>
+    <div class="Information">
+            
+        <div class="box">
+            <ul>
+                <li>
+                    <div class="boxweiss"><img src="/ptc/weis.jpg" id="pctbox1"></div><p>TDS Weis President</p></li>
+                <li><div class="boxkaho"><img src="/ptc/box2.jpeg" id="pctbox2"></div><p>TDS Kaho Treasurer</p></li>
+                <li><div class="box3"><img src="/ptc/box3.jpeg" id="pctbox3"></div><p>Upcoming information</p></li>
+                <li><div class="box4"><img src="/ptc/box4.jpeg" id="pctbox4"></div><p>Upcoming information</p></li>
+            </ul>
+        </div>
+    </div>
+       
+    <figure class="quote">
+        <blockquote> Those who do evil around them end up paying the price. </blockquote></p>
+        <figcaption id="quoteauthor"> &mdash; Ivern
+        </figcaption>
+    </figure>
+
+    <div class="action">
+        <h2>Come join our community</h2>
+        <p>Link to our Discord</p>
+        <a href="https://discord.gg/QsCPhbtndM" button id="button_discord" type="button">Discord</button></a>
+
+    </div>
+
+<!--Footer start-->
+    <div class="grid-container">
+        <div class="text_footer">
+            <p>The Damocles Sword</p>
+        
+                <img src="/ptc/ALODZ.png" alt="logo_footer">
+            </div>
+
+    </div>
+
+		<script type="text/javascript">
+			function _(e) {
+				return document.getElementById(e);
+			}
+			let displayform = _('displayForm');
+			let forlogin = _('forLogin');
+			let loginForm = _('loginForm');
+			let forRegister = _('forRegister');
+			let registerForm = _('registerForm');
+			let formContainer = _('formContainer');
+			displayform.addEventListener('click', showForm);
+
+			forlogin.addEventListener('click', (e) => {
+				e.preventDefault;
+				forRegister.classList.remove('active');
+				forlogin.classList.add('active');
+				if (loginForm.classList.contains('toggleForm')) {
+					formContainer.style.transform = 'translate(0%)';
+					formContainer.style.transition = 'transform .5s';
+					loginForm.classList.remove('toggleForm');
+					registerForm.classList.add('toggleForm');
+				}
+			});
+
+			forRegister.addEventListener('click', (e) => {
+				e.preventDefault;
+				forlogin.classList.remove('active');
+				forRegister.classList.add('active');
+				if (registerForm.classList.contains('toggleForm')) {
+					formContainer.style.transform = 'translate(-100%)';
+					formContainer.style.transition = 'transform .5s';
+					registerForm.classList.remove('toggleForm');
+					loginForm.classList.add('toggleForm');
+				}
+			});
+
+			function showForm() {
+				document.querySelector('.formWrapper .card').classList.toggle('show');
+			}
+		</script>
+		</div>
+
+        
+	</body>
+</html>

@@ -1,6 +1,8 @@
 <html>
     <head>
+      <script src="/JS/contact.js"></script>
         <link rel="stylesheet" href="/css/css_presentation.css" type="text/css">
+        <link rel="stylesheet" href="/css/contact.css" type="texte/css">
         <meta charset="utf-8" />
         <title>Planning</title>
 
@@ -15,7 +17,7 @@
     <nav>
       <ul class="menu">
         <li>
-          <a href="main_page.html">TDS</a>
+          <a href="connexion.html">TDS</a>
           <ul class="sub-menu">
             <li>
               <a  href="/page/Presentation.html">Presentation</a>
@@ -38,7 +40,7 @@
           <a href="https://discord.gg/QsCPhbtndM"> Discord</a>
       </li>
       <li>
-           <a href="#"> Connection </a>
+           <a href="/page/connexion.html"> Connection </a>
       </li>
   </ul>
 </nav> 
@@ -57,6 +59,27 @@
   </div> 
 <!--Header fin-->
 </header>   
+
+
+<form id="contact-form" action="submit-form.php" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" id="name" required>
+  </label>
+  <br>
+  <label>
+    Email:
+    <input type="email" name="email" id="email" required>
+  </label>
+  <br>
+  <label>
+    Message:
+    <textarea name="message" id="message" required></textarea>
+  </label>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
 
 
 

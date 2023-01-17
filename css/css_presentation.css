@@ -193,7 +193,7 @@ img{
 }
 
  #player {
-background-color: black;
+background-color: 1F2937;
  }
 p {
   font-size: small;
@@ -225,4 +225,33 @@ p {
 
 .text_footer p {
 font-size: 34px;
+}
+
+/*calendar*/
+table#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td.event {
+  background-color: #a40f0f;
+}
+
+td.today {
+  background-color: #ffd600;
+}
+
+td.selected {
+  background-color: #4caf50;
+  color: white;
 }
