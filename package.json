@@ -1,7 +1,7 @@
 {
   "name": "assignement3_vu",
   "version": "1.0.0",
-  "description": "Don't hesitaite to give advice/idea for the developpement",
+  "description": "Don't hesitate to give advice/idea for the developpement",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
